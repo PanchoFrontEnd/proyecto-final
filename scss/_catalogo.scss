@@ -1,0 +1,41 @@
+.catalogo{
+    color: rgb(231, 172, 8);
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    text-shadow:$sombreado;
+}
+.target{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center      
+}
+
+.tarjeta{
+    @include tarjeta(300px);
+    img{
+        width:100%;
+        
+    }
+    ul{
+        list-style: none;
+    }
+    h3{
+        font-size: 20px;
+        padding: 5px;
+        margin: 5px;
+    }
+    button{
+        @extend %button;
+    }
+    select{
+       @extend %select;
+    }
+    p{
+       padding: 5px;
+       margin: 5px;
+    }
+
+}
+

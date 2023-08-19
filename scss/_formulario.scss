@@ -1,0 +1,46 @@
+.formulario{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h2{
+        color: rgb(231, 172, 8);
+        font-size: 50px;
+        text-align: center;
+        font-family: 'Lobster', cursive;
+        text-shadow:$sombreado;
+    }
+    
+
+}
+.usuario{
+    border: 3px solid #060404;
+    border-radius: 5px;
+    margin: 10px;
+    background-color:$bg-color ;
+    padding: 20px;
+    width:80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;;
+    h3{
+        color: rgb(231, 172, 8);
+        font-size: 30px;
+        font-family: 'Lobster', cursive;
+        text-shadow:$sombreado;
+        text-align: center
+    }
+    button{
+        @extend %button;
+        
+    }
+.barras{
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 10px;
+    border-radius: 3px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+}
+   
+}

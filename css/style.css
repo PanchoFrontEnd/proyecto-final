@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.usuario button, .tarjeta button {
+  background-color: rgb(231, 172, 8);
+  padding: 10px 17px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  transition: 0, 5s;
+}
+.usuario button:hover, .tarjeta button:hover {
+  background-color: rgb(200, 80, 148);
+}
+
+.tarjeta select {
+  background-color: rgb(231, 172, 8);
+  padding: 10px 17px;
+  border-radius: 5px;
+  border: none;
+  margin: 20px;
+  transition: 0, 5s;
+}
+.tarjeta select:hover {
+  background-color: rgb(200, 80, 148);
+}
+
+.navegador {
+  background-color: rgba(188, 85, 240, 0.951);
+}
+.navegador .fa-bars {
+  display: none;
+}
+@media (max-width: 768px) {
+  .navegador .fa-bars {
+    margin: 5px;
+    font-size: 35px;
+    color: azure;
+    display: block;
+  }
+}
+.navegador ul {
+  list-style: none;
+  display: flex;
+}
+.navegador ul li a {
+  color: azure;
+  text-decoration: none;
+  display: block;
+  padding: 10px 10px;
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+}
+@media (max-width: 768px) {
+  .navegador ul li a {
+    color: azure;
+  }
+}
+@media (max-width: 768px) {
+  .navegador ul {
+    position: absolute;
+    left: -290px;
+    width: 220px;
+    height: 75vh;
+    background-color: rgba(188, 85, 240, 0.951);
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    transition: 0.7s;
+    border-radius: 10px;
+    border: 3px solid #0f0d0d;
+    z-index: 4;
+  }
+}
+@media (max-width: 768px) {
+  .navegador ul:hover {
+    left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navegador .fa-bars:hover + ul {
+    left: 0;
+  }
+}
+.tienda {
+  color: rgb(231, 172, 8);
+  background-color: rgba(188, 85, 240, 0.951);
+  text-align: center;
+  font-size: 60px;
+  font-family: "Lobster", cursive;
+  text-shadow: 3px 3px 6px #040202;
+}
+
+.catalogo {
+  color: rgb(231, 172, 8);
+  font-size: 50px;
+  text-align: center;
+  font-family: "Lobster", cursive;
+  text-shadow: 3px 3px 6px #040202;
+}
+
+.target {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.tarjeta {
+  width: 300px;
+  height: auto;
+  margin: 25px;
+  background-color: rgba(188, 85, 240, 0.951);
+  font-family: "Bebas Neue", sans-serif;
+  border: none;
+  border-radius: 6px;
+  color: azure;
+  box-shadow: 5px 5px 32px 4px #000000;
+}
+.tarjeta img {
+  width: 100%;
+}
+.tarjeta ul {
+  list-style: none;
+}
+.tarjeta h3 {
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+}
+.tarjeta p {
+  padding: 5px;
+  margin: 5px;
+}
+
+.formulario {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.formulario h2 {
+  color: rgb(231, 172, 8);
+  font-size: 50px;
+  text-align: center;
+  font-family: "Lobster", cursive;
+  text-shadow: 3px 3px 6px #040202;
+}
+
+.usuario {
+  border: 3px solid #060404;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: rgba(188, 85, 240, 0.951);
+  padding: 20px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.usuario h3 {
+  color: rgb(231, 172, 8);
+  font-size: 30px;
+  font-family: "Lobster", cursive;
+  text-shadow: 3px 3px 6px #040202;
+  text-align: center;
+}
+.usuario .barras {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 10px;
+  border-radius: 3px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 18px;
+}
+
+.pie-de-pagina {
+  background-color: rgba(188, 85, 240, 0.951);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 32px;
+}
+.pie-de-pagina .tienda {
+  color: rgb(231, 172, 8);
+  background-color: rgba(188, 85, 240, 0.951);
+  text-align: center;
+  font-size: 60px;
+  font-family: "Lobster", cursive;
+  text-shadow: 3px 3px 6px #040202;
+  padding-left: 20px;
+}
+.pie-de-pagina .datos {
+  font-size: 25px;
+  color: azure;
+  align-items: center;
+  font-family: "Bebas Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.pie-de-pagina .logo-insta {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #040202;
+  border-radius: 15px;
+  box-shadow: 5px 5px 32px 4px #000000;
+}
+.pie-de-pagina .logo-face {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #040202;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 5px 5px 32px 4px #000000;
+}
+.pie-de-pagina .logo-twitter {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #040202;
+  border-radius: 15px;
+  box-shadow: 5px 5px 32px 4px #000000;
+}
+
+.quienessomos {
+  color: rgb(231, 172, 8);
+  font-size: 50px;
+  text-align: center;
+  font-family: "Lobster", cursive;
+  text-shadow: 3px 3px 6px #040202;
+}
+
+.carousel-item {
+  height: auto;
+  object-fit: cover;
+}
+
+.descripcion {
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  padding: 20px;
+  border: none;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
